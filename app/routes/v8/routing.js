@@ -1,7 +1,15 @@
 var version = '/v8/'
 
-// module.exports = function (router) {
-// //  Matching list - unfiltered
-//   router.post(version + 'matching-list', function (req, res) {
-//     res.redirect(version + 'matching-list-expanded')
-//   })
+module.exports = function (router) {
+
+// Exceptional Case Funding (ECF) question
+router.post(version + 'ecf-answer', function (req, res) {
+  if (req.session.data['ecf'] == "Yes"){
+      res.redirect(version + 'ineligible')
+  } else {
+      res.redirect(version + 'legal-aid-before')
+  }
+})
+
+
+}
