@@ -51,7 +51,7 @@
             {{ data['name'] or "Joe Bloggs" }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="./client-details.html">Change<span class="govuk-visually-hidden"> name</span></a>
+            <a class="govuk-link" href="./client-details">Change<span class="govuk-visually-hidden"> name</span></a>
           </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -62,7 +62,7 @@
             {{ data['name-change'] or "No" }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="./client-details.html">Change<span class="govuk-visually-hidden"> whether name has changed</span></a>
+            <a class="govuk-link" href="./client-details">Change<span class="govuk-visually-hidden"> whether name has changed</span></a>
           </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -73,7 +73,7 @@
             {{ data['dob-day'] or "10" }} {{ data['dob-month'] or "Oct" }} {{ data['dob-year'] or "1982" }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="./client-details.html">Change<span class="govuk-visually-hidden"> date of birth</span></a>
+            <a class="govuk-link" href="./client-details">Change<span class="govuk-visually-hidden"> date of birth</span></a>
           </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -84,7 +84,7 @@
             {{ data['place-of-birth'] or "London" }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="./client-details.html">Change<span class="govuk-visually-hidden"> place of birth</span></a>
+            <a class="govuk-link" href="./client-details">Change<span class="govuk-visually-hidden"> place of birth</span></a>
           </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -98,7 +98,7 @@
             {{ data['postcode'] or "BS14 9AA" }}
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="./client-find-address.html">Change<span class="govuk-visually-hidden"> address</span></a>
+            <a class="govuk-link" href="./client-find-address">Change<span class="govuk-visually-hidden"> address</span></a>
           </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -109,13 +109,13 @@
             Yes
           </dd>
           <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="./means-required.html">Change<span class="govuk-visually-hidden"> address</span></a>
+            <a class="govuk-link" href="./means-required">Change<span class="govuk-visually-hidden"> address</span></a>
           </dd>
         </div>
       </dl>
 
 
-      <form action="./task-list-new.html" method="post" novalidate>
+      <form action="./task-list-new" method="post" novalidate>
 
         {{ govukButton({
           text: "Save and continue"
