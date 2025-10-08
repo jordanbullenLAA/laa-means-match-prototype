@@ -1,10 +1,14 @@
-const express = require('express')
-const router = express.Router()
+
+const govukPrototypeKit = require('govuk-prototype-kit')
+const router = govukPrototypeKit.requests.setupRouter()
+
+// Add your routes here
 
 // Home page route
 router.get('/', function (req, res) {
   res.render('index')
 })
+
 
 // Load versioned routes here
 require('./routes/v8/routing.js')(router)
