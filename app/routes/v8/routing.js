@@ -13,7 +13,7 @@ router.post(version + 'ecf-answer', function (req, res) {
 })
 
 // Legal aid before question
-router.post(version + 'legal-aid-before', function (req, res) {
+router.post(version + 'legal-aid-before-answer', function (req, res) {
   if (req.session.data['legal-aid-before'] == "Yes, less than 6 months ago")
     {
       res.redirect(version + 'legal-aid-before2')
@@ -29,7 +29,7 @@ router.post(version + 'legal-aid-before', function (req, res) {
 })
 
 // Means assessment required question
-router.post(version + 'means-required', function (req, res) {
+router.post(version + 'means-required-answer', function (req, res) {
   if (req.session.data['means-required'] == "No")
     {
       res.redirect(version + 'non-means')
