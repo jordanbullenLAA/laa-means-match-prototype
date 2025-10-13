@@ -9,4 +9,3 @@ services:
     environment:
       - NODE_ENV=development
       - GOVUK_PROTOTYPE_KIT_USAGE_DATA=false
-    command: npm run dev
