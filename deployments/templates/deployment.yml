@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: laa-means-match-prototype-deployment
+  labels:
+    app: laa-means-match-prototype
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: laa-means-match-prototype # this should match the selector in service.yml
+  template:
+    metadata:
+      labels:
+        app: laa-means-match-prototype # this should match the selector in service.yml
+    spec:
+      containers:
+        - name: laa-means-match-prototype
+          image: ${REGISTRY}/${REPOSITORY}:${IMAGE_TAG}
+          ports:
+            - containerPort: 8080
