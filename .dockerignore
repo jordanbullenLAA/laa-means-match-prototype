@@ -1,0 +1,12 @@
+node_modules
+.git
+.gitignore
+README.md
+.tmp
+.env
+migrate.log
+usage-data-config.json
+.DS_Store
+.idea
+Dockerfile
+docker-compose.yml
