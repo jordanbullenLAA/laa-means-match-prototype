@@ -18,4 +18,4 @@ spec:
         - name: laa-means-match-prototype
           image: ${REGISTRY}/${REPOSITORY}:${IMAGE_TAG}
           ports:
-            - containerPort: 8080
+            - containerPort: 3000
