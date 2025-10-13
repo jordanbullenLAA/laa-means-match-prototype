@@ -8,6 +8,9 @@ COPY . .
 
 RUN mkdir -p .tmp
 
+# Set production environment
+ENV NODE_ENV=production
+
 # Change ownership to non-root user and switch to it
 RUN chown -R 1001:1001 /app
 USER 1001
