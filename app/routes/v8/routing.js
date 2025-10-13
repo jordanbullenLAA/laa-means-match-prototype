@@ -2,6 +2,17 @@ var version = '/v8/'
 
 module.exports = function (router) {
 
+
+// Which type of case question
+router.post(version + 'case-type-answer', function (req, res) {
+  if (req.session.data['case-type'] == "Civil certificated or licensed legal work")
+    {
+      res.redirect(version + 'which-type-of-case')
+    } else {
+      res.redirect(version + 'start-page')
+    }
+})
+
 // Exceptional Case Funding (ECF) question
 router.post(version + 'ecf-answer', function (req, res) {
   if (req.session.data['ecf'] == "Yes")

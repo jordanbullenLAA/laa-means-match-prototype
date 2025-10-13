@@ -11,12 +11,10 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <!-- <span class="govuk-caption-l">Legal aid number: LA-100054</span> -->
       <h1 class="govuk-heading-l">{{ data['name'] or "Joe Bloggs" }}</h1>
       <p class="govuk-body govuk-!-margin-bottom-1">Client's legal aid number: LA-100054</p>
       <p class="govuk-body">Case reference (UFN): CW-100122</p>
-      <!-- <p class="govuk-body govuk-!-margin-bottom-2"><span class="govuk-!-font-weight-bold">Client's legal aid number:</span> LA-100054</p>
-      <p class="govuk-body"><span class="govuk-!-font-weight-bold">Case reference (UFN):</span> CW-100122</p> -->
+
 
       <h2 class="govuk-heading-m">About your client</h2>
 
@@ -55,18 +53,17 @@
             title: {
               text: "Income"
             },
-            href: "https://check-your-client-qualifies-for-legal-aid.service.gov.uk/about-client/20cbb2dd-1131-43ce-851b-a0501b73f1af",
-            status: incompleteStatus
+            href: "#",
+            status: completedStatus
           },
           {
             title: {
               text: "Capital"
             },
-            status: {
-              text: "Cannot start yet",
-              classes: "govuk-task-list__status--cannot-start-yet"
-            }
+            href: "#",
+            status: completedStatus
           }
+          
         ]
       }) }}
 
@@ -79,28 +76,22 @@
             title: {
               text: "Client declaration"
             },
-            status: {
-              text: "Cannot start yet",
-              classes: "govuk-task-list__status--cannot-start-yet"
-            }
+            href: "#",
+            status: incompleteStatus
           },
           {
             title: {
               text: "Evidence"
             },
-            status: {
-              text: "Cannot start yet",
-              classes: "govuk-task-list__status--cannot-start-yet"
-            }
+            href: "#",
+            status: incompleteStatus
           },
           {
             title: {
               text: "Your declaration"
             },
-            status: {
-              text: "Cannot start yet",
-              classes: "govuk-task-list__status--cannot-start-yet"
-            }
+            href: "#",
+            status: incompleteStatus
           }
         ]
       }) }}
