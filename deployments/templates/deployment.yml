@@ -24,6 +24,8 @@ spec:
               value: "production"
             - name: PASSWORD
               value: "${PASSWORD}"
+            - name: USE_HTTPS
+              value: "false"
           livenessProbe:
             httpGet:
               path: /
