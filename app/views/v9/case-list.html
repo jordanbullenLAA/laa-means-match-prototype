@@ -14,10 +14,10 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-grid-column-full width">
 
       <h1 class="govuk-heading-l">
-        Your civil legal aid cases
+        Record civil controlled work
       </h1>
 
       {{ govukButton({
@@ -28,13 +28,13 @@
       <nav class="moj-sub-navigation" aria-label="Sub navigation">
         <ul class="moj-sub-navigation__list">
           <li class="moj-sub-navigation__item">
-            <a class="moj-sub-navigation__link" aria-current="page" href="#">Controlled work</a>
+            <a class="moj-sub-navigation__link" aria-current="page" href="#">Recorded cases</a>
           </li>
           <li class="moj-sub-navigation__item">
-            <a class="moj-sub-navigation__link" href="#">Certificated work</a>
+            <a class="moj-sub-navigation__link" href="#">In progress</a>
           </li>
         </ul>
-      </nav>
+      </nav> 
 
       <table class="govuk-table" data-module="moj-sortable-table">
 
@@ -42,13 +42,20 @@
 
         <thead class="govuk-table__head">
           <tr class="govuk-table__row">
-            <th scope="col" class="govuk-table__header" aria-sort="ascending">Client</th>
-            <th scope="col" class="govuk-table__header" aria-sort="none">Reference</th>
-            <th scope="col" class="govuk-table__header" aria-sort="none">Date recorded</th>
+            <th scope="col" class="govuk-table__header" aria-sort="none">Client name</th>
+            <th scope="col" class="govuk-table__header" aria-sort="none">Reference number</th>
+            <th scope="col" class="govuk-table__header" aria-sort="descending">Date recorded</th>
           </tr>
         </thead>
 
         <tbody class="govuk-table__body">
+
+
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#">Joe Bloggs</a></td>
+            <td class="govuk-table__cell">CW-101122</td>
+            <td class="govuk-table__cell" data-sort-value="2025.11.29">29 Nov 2025</td>
+          </tr>
 
           <tr class="govuk-table__row">
             <td class="govuk-table__cell"><a href="#">Jamal Thompson</a></td>

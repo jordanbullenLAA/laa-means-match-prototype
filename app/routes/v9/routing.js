@@ -25,11 +25,11 @@ router.post(version + 'ecf-answer', function (req, res) {
 
 // Legal aid before question
 router.post(version + 'legal-aid-before-answer', function (req, res) {
-  if (req.session.data['legal-aid-before'] == "Yes, less than 6 months ago")
+  if (req.session.data['legal-aid-before'] == "Yes, about the same matter")
     {
-      res.redirect(version + 'legal-aid-before2')
+      res.redirect(version + 'legal-aid-before-2')
     } 
-    else if (req.session.data['legal-aid-before'] == "Yes, more than 6 months ago")
+    else if (req.session.data['legal-aid-before'] == "Yes, about a different matter")
     {
       res.redirect(version + 'legal-aid-id')
     }
