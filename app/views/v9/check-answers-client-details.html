@@ -125,6 +125,28 @@
             <a class="govuk-link" href="./means-required">Change<span class="govuk-visually-hidden"> address</span></a>
           </dd>
         </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            What's the matter about?
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{ data['matter-type'] }}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="./matter-type">Change<span class="govuk-visually-hidden"> what the matter is about</span></a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Who's involved?
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{ data['matter-who'] }}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="./matter-type-2">Change<span class="govuk-visually-hidden"> who is involved</span></a>
+          </dd>
+        </div>
       </dl>
 
 
